@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+
+
+
+.burger-menu__button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 30;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+}
+.burger-menu__button:hover .burger-menu__lines {
+  filter: brightness(0.7);
+}
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+}
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.burger-menu__lines::before {
+  content: "";
+  top: -6px;
+}
+.burger-menu__lines::after {
+  content: "";
+  top: 6px;
+}
+.burger-menu_active .burger-menu__lines {
+  background-color: transparent;
+}
+.burger-menu_active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.burger-menu_active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.burger_menu__nav {
+  padding-top: 40px;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background-color: #2a2a2a;
+  left: -100%;
+}
+.burger-menu_active .burger_menu__nav {
+  left: 0;
+}
+.burger-menu__link {
+  padding: 10px 20px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: #fff;
+}
+.burger-menu__link:hover {
+  background-color: #4282fa;
+}
+.title {
+  color: #fff;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+.text-number {
+  margin-top: 5px;
+  margin-bottom: 35px;
+  color: #fff;
+  font-size: small;
+  padding-left: 20px;
+}
+.burger-menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+.burger-menu_active .burger-menu__overlay {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /* K O N T A K T L A R  */
+
+.navbar{
+    height: 50px;
+    width: 1500px;
+    border: 1px solid black;
+}
+
+.umumiy{
+    display: flex;
+}
+
+.option{
+    width: 72px;
+    border: 1px solid red;
+}
+
+
+
+        /* option start */
+
+.opt{
+    height: 55px;
+    width: 100%;
+    border: 1px solid;
+}
+
+        /* option end */
+
+
+           /* contactlar start */
+
+.contactlar{
+    width: 500px;
+    height: 790px;
+    border: 1px solid black;
+}
+
+
+/* search */
+
+.contactlar__qidiruv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    padding-bottom: 2px;
+}
+
+.contactlar__qidiruv input{
+    width: 470px;
+    padding: 8px;
+    border: none;
+    font: icon;
+    font-size: 14px;
+    border-radius: 4px;
+    outline-color: rgb(70, 163, 255);
+    background-color: rgb(236, 234, 234);
+}
+
+/* search end */
+
+
+
+
+      /* users start */
+
+.contactlar__users{
+    flex-direction: column;
+}
+
+.contactlar__user{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+
+.contactlar__user:hover{
+    background-color: rgb(246, 246, 246);
+}
+
+.contactlar__user:active{
+    color: white;
+    background-color: dodgerblue;
+}
+
+.contactlar__users img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.last__time{
+    margin-left: 297px;
+    margin-top: 18px;
+    font-size: small;
+    font-family: 'Nunito Sans';
+    font: bolder;
+}
+
+.user__item{
+    margin-left: 10px;
+}
+
+.user__item span{
+    display: flex;
+    align-items: center;
+}
+
+.user__nikname{
+    margin-top: -4px;
+}
+
+.user__nikname h3{
+    font-weight: 600;
+}
+
+.user__message{
+    font-family: serif;
+    color: rgb(150, 149, 149);
+}
+
+.user__message:active{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contactlar__user-box:hover{
+    background-color: rgb(246, 246, 246);
+}
+
+.contactlar__user:active{
+    color: white;
+    background-color: dodgerblue;
+}
+
+.contactlar__user1 img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.last__time1{
+    margin-left: 297px;
+    margin-top: 18px;
+    font-size: small;
+    font-family: 'Nunito Sans';
+    font: bolder;
+}
+
+.user__item1{
+    margin-left: 10px;
+}
+
+.user__item1 span{
+    display: flex;
+    align-items: center;
+}
+
+.user__nikname1{
+    margin-top: -4px;
+}
+
+.user__nikname1 h3{
+    font-weight: 600;
+}
+
+.user__message1{
+    font-family: serif;
+    color: rgb(150, 149, 149);
+}
+
+.user__message1:active{
+    color: white;
+}
+
+           /* contactlar end */
+
+
+
+
+.chat{
+    width: 965px;
+    border: 1px solid black;
+}
